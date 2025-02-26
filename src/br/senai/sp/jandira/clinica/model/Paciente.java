@@ -12,6 +12,7 @@ public class Paciente {
 	private double altura;
 	public String telefone;
 	public boolean estaInternado;
+	private double imc;
 	
 	public void setAltura(double altura){
 		
@@ -40,9 +41,13 @@ public class Paciente {
 	
 	
 	public void mostrarFichaPaciente() {
+		
+		calcularImc();
+		
 		System.out.println("nome: " + nome);
         System.out.println("peso: " + peso);
         System.out.println("altura: " + altura);
+        System.out.println("IMC: " + imc);
         System.out.println("telefone: " + telefone);
         System.out.println("data nasc: " + dataNacimento);
         System.out.println("dia nasc: " + obterDiaSemanaNacimento());
@@ -61,6 +66,7 @@ public class Paciente {
 	}
 	
 	public void calcularImc() {
+	imc = peso / (altura * altura);
 	
 	}
 	

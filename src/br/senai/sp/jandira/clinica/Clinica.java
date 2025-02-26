@@ -19,7 +19,7 @@ public class Clinica {
 		Paciente p1 = new Paciente();
 		p1.nome = "Ana Maria";
 		p1.setAltura(1.87);
-		p1.setPeso(39.000);
+		p1.setPeso(40.000);
 		p1.telefone = "(11)9888-8888";
 	    p1.dataNacimento = LocalDate.of(2003, 2, 28);
 		p1.estaInternado = true;
@@ -33,6 +33,7 @@ public class Clinica {
         p2.setPeso(41.000);
         p2.dataNacimento = LocalDate.of(2008, 10, 27);
         p1.estaInternado = true;
+        
 	    //Mostra dados do paciente1
         p1.mostrarFichaPaciente();
         p2.mostrarFichaPaciente();
