@@ -8,14 +8,40 @@ public class Paciente {
 
 	public String nome;
 	public LocalDate dataNacimento;
-	public double peso;
-	public double altura;
+	private double peso;
+	private double altura;
 	public String telefone;
 	public boolean estaInternado;
 	
+	public void setAltura(double altura){
+		
+		if (altura > 0) {
+			//true
+			this.altura = altura;
+		}else {
+			//false
+			System.out.println("A Altura do(a) paciente " + nome + " está incoreta");
+		}
+		
+		
+	}
+	public void setPeso(double peso){
+		
+		if (peso >= 40) {
+			//true
+			this.peso = peso;
+		}else {
+			//false
+		System.out.println("o peso do(a) paciente " + nome + " está incoreto");
+		}
+	}
+	
+	
+	
+	
 	public void mostrarFichaPaciente() {
 		System.out.println("nome: " + nome);
-        System.out.println("pesso: " + peso);
+        System.out.println("peso: " + peso);
         System.out.println("altura: " + altura);
         System.out.println("telefone: " + telefone);
         System.out.println("data nasc: " + dataNacimento);
